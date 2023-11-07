@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./CSSreset.css">
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="blog--page">
+        <div class="head--container">
+            <div class="burger" id="burger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav class="nav-links" id="navLinks">
+                <a href="#Works">Works</a>
+                <a href="#blog">Blog</a>
+                <a href="#Contacts">Contact</a>
+            </nav>
+            <div class="secon--content--header">
+                <div class="text--box">
+                    <p class="head--cont--text--01">Hi, I am John,<br>Creative Technologist</p>
+                    <p class="head--cont--text--02">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    <button class="head--cont--button">Download Resume</button>
+                </div>
+                <div class="profil--photo">
+                    <img class="photo" src="/assets/images/profil--photo.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="main--container--01">
+            <div class="content--wraper">
+                <div class="text--wraper--main">
+                    <p class="for--ancher" id="blog">Recent posts</p>
+                    <p class="VieW--all">View all</p>
+                </div>
+                <div class="box--content--wraper">
+                    <div class="box--content">
+                        <h1 class="box--content--h1">Making a design system from scratch</h1>
+                        <p class="box--content--p1">12 Feb 2020     |     Desing, Pattern</p>
+                        <p class="box--content--p2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    </div>
+                    <div class="box--content">
+                        <h1 class="box--content--h1">Creating pixel perfect icons in Figma</h1>
+                        <p class="box--content--p1">12 Feb 2020     |     Figam, Icon Desing</p>
+                        <p class="box--content--p2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container--02">
+            <p class="container--02--p" id="Works">Featured works</p>
+            <div class="container--02--box--wraper">
+                <div class="box--01">
+                    <div class="for--image">
+                        <img class="img" src="/assets/images/image--01.svg" alt="">
+                    </div>
+                    <div class="for--text">
+                        <h1 class="for--text--01">Designing Dashboards</h1>
+                        <div class="text--img">
+                            <p class="number">2022</p>
+                            <p class="text--in--2022">Dashboard</p>
+                        </div>
+                        <p class="for--text--text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    </div>
+                </div>
+                <div class="box--01">
+                    <div class="for--image">
+                        <img class="img" src="/assets/images/image--02.svg" alt="">
+                    </div>
+                    <div class="for--text">
+                        <h1 class="for--text--01">Vibrant Portraits of 2020</h1>
+                        <div class="text--img">
+                            <p class="number">2018</p>
+                            <p class="text--in--2022">Illustration</p>
+                        </div>
+                        <p class="for--text--text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    </div>
+                </div>
+                <div class="box--01">
+                    <div class="for--image">
+                        <img class="img" src="/assets/images/image--03.svg" alt="">
+                    </div>
+                    <div class="for--text">
+                        <h1 class="for--text--01">36 Days of Malayalam type</h1>
+                        <div class="text--img">
+                            <p class="number">2018</p>
+                            <p class="text--in--2022">Typography</p>
+                        </div>
+                        <p class="for--text--text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contacts--container" id="Contacts">
+            <div class="image--wraper">
+                <img src="/assets/images/FB.svg" alt="">
+                <img src="/assets/images/Insta.svg" alt="">
+                <img src="/assets/images/TWIT.svg" alt="">
+                <img src="/assets/images/LINKED--IN.svg" alt="">
+            </div>
+            <p class="rights--recived">Copyright ©2020 All rights reserved </p>
+        </div>
+    </div>
+
+<script>
+    const burger = document.getElementById('burger');
+const navLinks = document.getElementById('navLinks');
+
+// Add a click event listener to the burger icon
+burger.addEventListener('click', () => {
+    // Toggle the "active" class on the navigation links to show/hide them
+    navLinks.classList.toggle('active');
+});
+</script>
+</body>
+</html>
